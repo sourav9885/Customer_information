@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Address Page</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #e9e4dd
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 720px;
+    width: 400px;
+    background-color: rgba(56, 65, 190, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 25px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 6px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(61, 15, 15, 0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <!-- Design by foolishdeveloper.com -->
+        <title>Address Page</title>
+     
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        <!--Stylesheet-->
+        <style media="screen">
+          *,
+    *:before,
+    *:after{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #080710;
+    }
+    .background{
+        width: 430px;
+        height: 520px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+    }
+    .background .shape{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .shape:first-child{
+        background: linear-gradient(
+            #1845ad,
+            #23a2f6
+        );
+        left: -80px;
+        top: -80px;
+    }
+    .shape:last-child{
+        background: linear-gradient(
+            to right,
+            #ff512f,
+            #e9e4dd
+        );
+        right: -30px;
+        bottom: -80px;
+    }
+    form{
+        height: 720px;
+        width: 400px;
+        background-color: rgba(56, 65, 190, 0.13);
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        padding: 50px 35px;
+    }
+    form *{
+        font-family: 'Poppins',sans-serif;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+    form h3{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+    }
+    
+    label{
+        display: block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    input{
+        display: block;
+        height: 25px;
+        width: 100%;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 3px;
+        padding: 0 6px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    ::placeholder{
+        color: #e5e5e5;
+    }
+    button{
+        margin-top: 50px;
+        width: 100%;
+        background-color: #ffffff;
+        color: #080710;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .social{
+      margin-top: 30px;
+      display: flex;
+    }
+    .social div{
+      background: red;
+      width: 150px;
+      border-radius: 3px;
+      padding: 5px 10px 10px 5px;
+      background-color: rgba(61, 15, 15, 0.27);
+      color: #eaf0fb;
+      text-align: center;
+    }
+    .social div:hover{
+      background-color: rgba(255,255,255,0.47);
+    }
+    .social .fb{
+      margin-left: 25px;
+    }
+    .social i{
+      margin-right: 4px;
+    }
+    
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form action="{% url 'addresspage' %}" method="post">
+            <h3>Fill the Customer Address</h3>
+            {% csrf_token %} 
+            <label for="street_name">street  Name:</label>
+            <input type="text" placeholder="Street Name" name="street_name" id="street_name" required>
+    
+            <label for="pincode">pincode :</label>
+            <input type="text" placeholder="Pincode" name="pincode" id="pincode" required>
+    
+            <label for="city">City</label>
+            <input type="text" placeholder="city" name="city" id="city" required>
+    
+            <label for="state">State</label>
+            <input type="text" placeholder="City" name="state" id="state" required>
+    
+            <label for="country_code">Country Code</label>
+            <input type="text" placeholder="country_code" name="country_code" id="country_code" required>
+    
+            <button type="submit">Next & Save</button>
+            <!-- <input type="button" value=""> -->
+            <!-- <div class="social">
+              <div class="go"><i class="fab fa-google"></i>  Google</div>
+              <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+            </div> -->
+          
+        </form>
+<script>
+$(document).ready(function() {
+    $("#pincode").on("input", function() {
+        var pincode = $(this).val();
+        if (!/^[1-9][0-9]{5}$/.test(pincode)) {
+            $(this).css("border", "2px solid red");
+        } else {
+            $(this).css("border", "1px solid #ccc");
+        }
+    });
+});
+
+        </script>
+    </body>
+    </html>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="{% url 'addresspage' %}" method="post">
+        <h3>Fill the Customer Address</h3>
+        {% csrf_token %} 
+        <label for="street_name">street  Name:</label>
+        <input type="text" placeholder="Street Name" name="street_name" id="street_name">
+
+        <label for="pincode">pincode :</label>
+        <input type="text" placeholder="Pincode" name="pincode" id="pincode">
+
+        <label for="city">City</label>
+        <input type="text" placeholder="city" name="city" id="city">
+
+        <label for="state">State</label>
+        <input type="text" placeholder="City" name="state" id="state">
+
+        <label for="country_code">Country Code</label>
+        <input type="text" placeholder="country_code" name="country_code" id="country_code">
+
+        <button type="submit">Next & Save</button>
+        <!-- <input type="button" value=""> -->
+        <!-- <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div> -->
+      
+    </form>
+    
+</body>
+</html>
